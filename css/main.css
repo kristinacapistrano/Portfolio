@@ -12,11 +12,14 @@
    ========================================================================== */
 
 html {
-  color: #222;
+  color: #999999;
   font-size: 1em;
   line-height: 1.4;
   scroll-behavior: smooth;
+  scrollbar-track-color: #3c3f41;
+  background-color: #3c3f41;
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -104,67 +107,99 @@ textarea {
   margin-right: 45px;
 }
 
-section{
+.div-projects{
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-content: end;
-  height: 50%;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   padding-top: 50px;
 }
+
+.project-container{
+  display: flex;
+  background-color: #2b2b2b;
+  color: #6897BB ;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 650px;
+  padding: 20px;
+  font-size: 15px;
+}
+
+.div-about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 50px;
+}
+.about-item{
+  width: 50%;
+}
+
 #about-img{
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  margin-right: 15px;
+  margin: 50px 50px 50px 100px;
 }
 #sm-list{
   display: flex;
   flex-direction: row;
-  margin: 50px 50px 0px 0px;
+  justify-content: center;
+  width: 100%;
 }
-li{
-  padding-top: 75px;
-}
+
 .header-style{
   font-weight: bold;
   font-size: 45px;
   color: coral;
 }
-
-.section-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  border-radius: 15px;
-  align-items: flex-start;
-  width: 650px;
-  padding: 0px 0px 0px 20px ;
-  border: lightcoral 1px solid;
-  border-left: none;
-  font-size: 15px;
-}
-
-#footer {
-  display: flex;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 6rem;
-  justify-content: flex-start;
-}
-
-.footer-items{
+.img-socialMedia{
   width: 50px;
   height: 50px;
-  padding-right: 20px;
+  padding: 10px 25px;
 }
-
 ul{
   list-style: none;
 }
 a{
   text-decoration: none;
+}
+
+.scroll{ width:400px;
+  height:200px;
+  overflow: scroll;
+}
+.scroll{
+  scrollbar-face-color: #367CD2;
+  scrollbar-shadow-color: #FFFFFF;
+  scrollbar-highlight-color: #FFFFFF;
+  scrollbar-3dlight-color: #FFFFFF;
+  scrollbar-darkshadow-color: #FFFFFF;
+  scrollbar-track-color: #FFFFFF;
+  scrollbar-arrow-color: #FFFFFF;
+}
+
+/* Let's get this party started */
+.scroll::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+.scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+.scroll::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: white;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
 
 /* ==========================================================================
