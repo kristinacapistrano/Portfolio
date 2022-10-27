@@ -1,0 +1,48 @@
+/*
+  ==========================================================
+  Main elements
+  ==========================================================
+  */
+
+html{
+  color: white;
+  font-size: 20px;
+  background-color: black;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+li{
+  list-style: none;
+}
+/*
+  ==========================================================
+  Custom classes
+  ==========================================================
+ */
+/* The navbar container */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Navbar links */
+.topnav a {
+  float: right;
+  display: block;
+  color: lightgray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Links - change color on hover */
+.topnav a:hover, focus{
+  transition: all 0.5s ease-out;
+  color: black;
+  background-color: lightgray;
+  border-left: lightsalmon 2px solid;
+}
