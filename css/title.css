@@ -77,10 +77,12 @@ li{
 .topnav {
   overflow: hidden;
   background-color: black;
-  position: -webkit-sticky;
+  position: sticky;
+  padding-top: 10px;
   top: 0;
   width: 100%;
 }
+
 
 /* Navbar links */
 .topnav a {
@@ -100,3 +102,17 @@ li{
   border-left: lightsalmon 2px solid;
 }
 
+.cards{
+  width: 60%;
+  height:300px;
+  align-self: center;
+  text-align: justify-all;
+  margin-top: 50px;
+  padding-top: 15%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+li{
+  list-style: none;
+}
