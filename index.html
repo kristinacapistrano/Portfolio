@@ -22,62 +22,88 @@
 </head>
 
 <body>
-<div class = flex-container>
-  <div class="flex-fname">Kristina
-    <br>Capistrano
+
+  <div class="left">social media</div>
+  <div class="mid">
+    <div class = flex-container id="home">
+      <div class="flex-fname">Kristina
+        <br>Capistrano
+      </div>
+      <!-- Add your site or application content here -->
+      <nav class = topnav>
+        <a href="#about">   1. About</a>
+        <a href="#exp">     2. Experience</a>
+        <a href="#edu">     3. Education</a>
+        <a href="#proj">    4. Projects</a>
+        <a href="#hobbies"> 5. Hobbies</a>
+      </nav>
+      <section id="about" class = "cards">
+        <h1>About Me</h1>
+        <p class="fName">
+          My name is
+          <span style="color:orange">Kris</span>
+          <span style = "border: darkgoldenrod 1px solid; padding-left: 4px;margin: 0%;">tina</span>.
+          I was born in Batangas, Philippines and moved to the USA when I was 11.
+          I put myself through school while supporting my parents. I pursued my father's
+          dream of being an engineer on a whim and started learning to code freshman year
+          of college. I definitely did not see myself coding for a career, but here I am!
+          I found a love for coding through robotics courses I took in
+          <a href = "https://www.mesacc.edu/">Mesa Community College</a>
+          and followed that with more advanced disciplines at
+          <a href="https://www.asu.edu/">Arizona State University.</a>
+          After graduation, I got a job at ITC in Tempe, AZ.
+        </p>
+      </section>
+      <section id="exp" class = "cards">
+        <h1>Experience</h1>
+        <p>
+          The company I work for produces machines that runs different types of tests on probe cards. I currently maintain
+          the native code that runs on our first gen machine. The language used here is CPP.
+          And my day-to-day? It is normally just me checking Jira
+          for any bugs and features our customers report and/or our field services. After a bug
+          or feature is implemented, I create release via InstallShield program, which is then
+          tested by our field service manager before it goes out to customers. Currently,
+          I've been working on a program that reads csv files for a motherboard configuration
+          and translates the edges and channels to a formatted display that will assist in
+          connecting towers to pads with flex cables. This program is written in C#. I am also working on building
+          a new help system for our main machine. This
+          will use generated XML files and display via html and will only by use by employess within
+          the company.
+        </p>
+      </section>
+      <section id="edu" class = "cards">
+        <h1>Education</h1>
+        Arizona State University, 2016 - 2020
+        <br>Bachelor's Degree in Software Engineer.
+      </section>
+      <section id="proj" class = "cards">
+        <h1>Projects</h1>
+        <ul>
+          <li>Portfolio</li>
+          <li>Attendance Application</li>
+          <li>Reminder Application</li>
+        </ul>
+      </section>
+      <section id="hobbies" class="cards">
+        <h1>Hobbies</h1>
+        Im not sure if this is considered a hobby or just a lifestyle, but I love staying home and
+        finding old shows to watch. I've been an avid anime fan since I was young, and recently I've been
+        getting back to watching my old favorites. I also love to spend my time going out to eat. I've been
+        really into steak houses a lot, and brunch! And to be completely honest, if I'm not out, then
+        I am usually doing absolutely nothing. This is normally on the weekends. Since work usually burns me out
+        during the week, I tend to let go and relax completely by just laying down on my bed.
+        <br><br>In the future, I plan to be more involved with coding after my work hours.
+      </section>
+    </div>
   </div>
-  <!-- Add your site or application content here -->
-  <nav class = topnav>
-    <a href="#hobbies"> 5. Hobbies</a>
-    <a href="#proj">    4. Projects</a>
-    <a href="#edu">     3. Education</a>
-    <a href="#exp">     2. Experience</a>
-    <a href="#about">   1. About</a>
-  </nav>
-  <section id="about" class = "cards">
-    My name is Kristina. I was born in the Philippines and moved to AZ, USA when I was 11.
-    I continued my education here and found my love for programming.
-    After graduation, I got my first job at Integrated Technology Corp.,
-    which is a small company down in Tempe, Az. I am currently 1 of the 2 software engineer
-    in this company which makes everything a bit more challenging than I had hope for my first job.
-    Nevertheless, every day is pretty fun! I definitely enjoy learning about what other people do,
-    and of course programming.
-  </section>
-  <section id="exp" class = "cards">
-    The company I work for produces machines that runs different types of tests on probe cards. I currently maintain
-    the native code that runs on our first gen machine. The language used here is CPP.
-    And my day-to-day? It is normally just me checking Jira
-    for any bugs and features our customers report and/or our field services. After a bug
-    or feature is implemented, I create release via InstallShield program, which is then
-    tested by our field service manager before it goes out to customers. Currently,
-    I've been working on a program that reads csv files for a motherboard configuration
-    and translates the edges and channels to a formatted display that will assist in
-    connecting towers to pads with flex cables. This program is written in C#. I am also working on building a new help system for our main machine. This
-    will use generated XML files and display via html.
-  </section>
-  <section id="edu" class = "cards">
-    Arizona State University, 2016 - 2020
-    <br>Bachelor's Degree in Software Engineer.
-  </section>
-  <section id="proj" class = "cards">
-    <ul>
-      <li>Portfolio</li>
-      <li>Attendance Application</li>
-      <li>Reminder Application</li>
-    </ul>
-  </section>
-  <section id="hobbies" class="cards">
-    Im not sure if this is considered a hobby or just a lifestyle, but I love staying home and
-    finding old shows to watch. I've been an avid anime fan since I was young, and recently I've been
-    getting back to watching my old favorites. I also love to spend my time going out to eat. I've been
-    really into steak houses a lot, and brunch! And to be completely honest, if I'm not out, then
-    I am usually doing absolutely nothing. This is normally on the weekends. Since work usually burns me out
-    during the week, I tend to let go and relax completely by just laying down on my bed.
+  <div class="right">
+    <div class="smallHeartItem" style="">
+      <a href="#home">
+        <img  src="assets/up-arrow.png" alt="up arrow">
+      </a>
+    </div>
+  </div>
 
-    <br><br>In the future, I plan to be more involved with coding after my work hours.
-
-  </section>
-</div>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
