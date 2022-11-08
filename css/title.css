@@ -129,10 +129,20 @@ span{
 
 
 .left{
-  display: block;
+  display: grid;
   width: 20%;
-  float: left;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  grid-template-rows: 200px 200px 200px auto auto auto 200px;
+  grid-template-columns: auto auto;
 }
+.left img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+
 .mid{
   display: block;
   width: 70%;
@@ -146,8 +156,6 @@ span{
   right: 0;
   grid-template-rows: 200px 200px auto 200px 200px;
   grid-template-columns: auto auto;
-
-
 }
 .smallHeartItem{
   grid-row-start: 5;
