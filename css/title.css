@@ -31,6 +31,7 @@ span{
  */
 
 
+
 @keyframes slideLeft {
   from {
     margin-bottom: 100%;
@@ -127,21 +128,37 @@ span{
   height: 500px;
 }
 
+@keyframes openup {
+  from {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+  }
 
+  to {
+    border-radius: 0%;
+    height: 50px;
+    width: 50px;
+  }
+}
 .left{
-  display: grid;
+  display: block;
   width: 20%;
-  height: 100vh;
-  position: fixed;
-  left: 0;
-  grid-template-rows: 200px 200px 200px auto auto auto 200px;
-  grid-template-columns: auto auto;
+  float: left;
 }
-.left img {
+.left img{
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-  width: 64px;
-  height: 64px;
 }
+.left a{
+  text-decoration: none;
+}
+.left img:hover{
+  animation-name: openup;
+  animation-duration: 0.5s;
+}
+
 
 .mid{
   display: block;
